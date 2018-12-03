@@ -1,4 +1,3 @@
 # mywebsite
-
-        https://halalabidi.github.io/hala/webcomputer.html
+https://halalabidi.github.io/hala/webcomputer.html
       
