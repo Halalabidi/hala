@@ -1,4 +1,4 @@
 # mywebsite
 
-        hala/webcomputer.html
+        https://halalabidi.github.io/hala/webcomputer.html
       
