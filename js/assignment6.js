@@ -1,6 +1,6 @@
 function encrypt(){
 
-  var plaintext = prompt("Enter a senetence to scramble it to nonsense");
+  var plaintext = prompt("Enter a anything to scramble it to nonsense");
   var messagelist = [];
 
   for (var i=0;i<plaintext.length;i++){
