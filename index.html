@@ -3,17 +3,27 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <head><title> website </title>
 <script src="js/assignment4.js"></script>
-<script src="js/assignment5.js"></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./webcomputer_files/w3.css">
-<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <style>
+
 body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
-</head><body>
+</head>
+<body>
+
+  <canvas id="myCanvas" width="200" height="100" color="red"></canvas>
+  <script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
+</script>
+
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
@@ -22,6 +32,7 @@ body {font-size:16px;}
     <h3 href=#title class="w3-padding-64"><b>Computer<br>Science</b></h3>
   </div>
   <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class= "w3-large w3-button w3-bar-item w3-hover-white"> Home </a>
     <a href="#definition" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Definition</a> 
     <a href="#types" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Types</a> 
     <a href="./pages/aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
@@ -42,7 +53,7 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
   <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="title">
+  <div class="w3-container" style="margin-top:80px" id="Introduction">
     <h1 class="w3-xxxlarge w3-text-light-blue"><b> Introduction </b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round w3-light-blue">
   </div>
@@ -76,7 +87,7 @@ body {font-size:16px;}
     <h1 class="w3-xxlarge w3-ariel w3-text-light-blue"><b>Definition.</b></h1>
     <hr style="width:50px;border:5px solid black " class="w3-round">
     <p>Compuer Science is basically all that includes coding. </p>
-    <p> To be more precise it is the science that deals with the theory and methods of processing information in digital computers, the design of computer hardware and software, and the applications of computers. It encompasses both the study of theoretical algorithms and the practical problems involved in implementing them through computer hardware and software. For example, programming language theory considers various approaches to the description of computation, while the study of computer programming itself investigates various aspects of the use of programming languages and complex systems. Human–computer interaction considers the challenges in making computers and computations useful, usable, and universally accessible to humans. </br> For more information github<a href="http://www.businessdictionary.com/definition/computer-science.html" onclick="w3_close()"> Visit Here </a>
+    <p> To be more precise it is the science that deals with the theory and methods of processing information in digital computers, the design of computer hardware and software, and the applications of computers. It encompasses both the study of theoretical algorithms and the practical problems involved in implementing them through computer hardware and software. For example, programming language theory considers various approaches to the description of computation, while the study of computer programming itself investigates various aspects of the use of programming languages and complex systems. Human–computer interaction considers the challenges in making computers and computations useful, usable, and universally accessible to humans. </br> For more information <a href="http://www.businessdictionary.com/definition/computer-science.html" onclick="w3_close()"> Visit Here </a>
     </p>
 
   <!-- Types -->
@@ -87,13 +98,13 @@ body {font-size:16px;}
   </div>
 
   <!-- types -->
-  <div class="w3-row-padding w3-grayscale">
+  <div class="w3-row-padding w3-grayscale w3-large">
     <div class="w3-col m4 w3-margin-bottom">
       <div class="w3-light-blue">
         <img src="./webcomputer_files/htmlcode.png" alt="html" style="width:100%">
         <div class="w3-container">
           <h3>Hypertext Markup Language (HTML) </h3>
-          <p class="w3-opacity">The container &amp;</p> 
+          <p class="w3-opacity"> It is a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages. The role of HTML is to inform a web browser about how the content contained within an HTML file is structured. Commonly used HTML tags include h1, which describes a top-level heading; h2, which describes a second-level heading; p to describe a paragraph; table, which describes tabular data; and ol, which describes an ordered list of information.</p> 
           <p></p>
         </div>
       </div>
@@ -117,7 +128,7 @@ body {font-size:16px;}
         <img src="./webcomputer_files/javascript.png" alt="Mike" style="width:100%">
         <div class="w3-container">
           <h3> JavaScript (JS) </h3>
-          <p class="w3-opacity"></p>
+          <p class="w3-opacity"> It is a scripting or programming language that allows you to implement complex things on web pages — every time a web page does more than just sit there and display static information for you to look at displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc.. It is also an object-oriented computer programming language commonly used to create interactive effects within web browsers.</p>
           <p></p>
         </div>
       </div>
@@ -173,6 +184,13 @@ function onClick(element) {
 }
 </script>
 
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="https://www.instagram.com/" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i> Instagram</a>
+  <a href="https://www.snapchat.com/" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i> Snapchat</a>
+  <a href="https://www.twitter.com/" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i>Twitter</a>
+</div>
 
 </body>
 

@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	<title> Projects</title>
-<script src="js/GTN.js"></script>
+
+<script src="../js/assignment4.js"></script>
+<script src="../js/assignment6.js"></script>
+</head>
 <body>
- <a href="./github/webcomputer.html"> Home </a>
+
 <!-- Sidebar/menu -->
 	<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
@@ -12,11 +20,12 @@
     <h3 href=#title class="w3-padding-64"><b>Computer<br>Science</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#definition" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Definition</a> 
-    <a href="#types" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Types</a> 
-    <a href="./pages/aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
-    <a href="./pages/projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="../index.html" onclick="w3_close()" class= "w3-large w3-button w3-bar-item w3-hover-white"> Home </a>
+    <a href="../index.html#Definition" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Definition</a> 
+    <a href="../index.html#types" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Types</a> 
+    <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
   </div>
 </nav>
 
@@ -29,18 +38,55 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
  
-
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+ 
  <div class="w3-container" id="projects" style="margin-top:75px">
     <h1 class="w3-xxlarge w3-text-light-blue"><b>Projects.</b></h1>
     <hr style="width:50px;border:5px solid black" class="w3-round">
     <p>All assignments for the course are present here.</p>
   </div>
 
-<div class="w3-button w3-grey w3-xlarge w3-row-padding w3-padding">
- <button onclick="Loops1()" class="w3-hover-light-blue"> A4-Loops 1</button>
- <button onclick="Loops2()" class="w3-hover-light-blue"> A4-Loops 2</button>
- <button onclick="GTN()" class="w3-hover-light-blue"> Assignemnt 5</button>
+<div class="w3-button w3-large w3-col-padding w3-bar-item">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <button onclick="Loops1()" class="w3-display w3-black w3-padding w3-hover-light-blue">A4-Loops 1</button>
+      </div>
+
+      <div class="w3-button w3-large w3-col-padding w3-padding">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <button onclick="Loops2()" class="w3-display w3-black w3-padding w3-hover-light-blue">A4-Loops 2</button>
+      </div>
+
+      <div class="w3-button w3-large w3-col-padding w3-padding">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-display-container">
+          <a href="GTN.html" class="w3-display w3-black w3-padding w3-hover-light-blue">Assignemnt 5</a> 
+
+      </div>
+
+       <div class="w3-button w3-large w3-col-padding w3-padding">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <button onclick="encrypt()" class="w3-display w3-black w3-padding w3-hover-light-blue">Press to Encrypt</button>
+      </div>
+
+
 </div>
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>

@@ -31,3 +31,4 @@ function substring(message){
 return(message.split(" "){2,})
 }
 console.log(substring("banana"))
+

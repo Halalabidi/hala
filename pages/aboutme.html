@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="..`css\w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 	<title>About Me</title>
-	<a href="documents\github\webcomputer.html" onclick="w3_close()" class="w3-button w3-xxlarge w3-display w3-padding"> Home </a>
+	
 </head>
 <body>
 
+<!-- Sidebar/menu -->
+	<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container w3-large">
+    <h3 href=#title class="w3-padding-64"><b>Computer<br>Science</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class= "w3-large w3-button w3-bar-item w3-hover-white"> Home </a>
+    <a href="../index.html#Definition" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Definition</a> 
+    <a href="../index.html#types" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Types</a> 
+    <a href="aboutme.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About me</a> 
+    <a href="projects.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
+    <a href="../index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
 
-<p> I'm Hala  </p>
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-light-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_close()">☰</a>
+  <span>Computer Science</span>
+</header>
 
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer; display: none;" title="close side menu" id="myOverlay"></div>
 
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+ 
+   <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="aboutme">
+    <h1 class="w3-xxxlarge w3-text-light-blue"><b> Who created this website .. </b></h1>
+    <hr style="width:50px;border:5px solid black" class="w3-round w3-light-blue">
+  </div>
+<p class="w3-xlarge"> Thank your for coming across my website! I'm Hala and trying to create a website from scartch was hard and challenging, but coming across a template from w3-schools gave me a boost to start and try achieve in making a website as good as the one I had encountered. By putting in some of my knowledge of coding from my past experiences and combining some of the codes that the template used I ended up with this website. I know very little about coding so having a template as a backbone and learning the code present on it and adding some of my own came a long way. So here it is a website that I have worked on which shows my skills in computer science.</p>
+
+ <script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
 </body>
 </html>
